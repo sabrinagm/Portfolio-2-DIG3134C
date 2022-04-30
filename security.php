@@ -54,4 +54,9 @@ function secure_sanitize() {
         return $result;
     }
 
+function secure_logout() {
+        // Set a cookie to the past
+        setcookie("login", "yes", time() - 10);
+    }
+
 ?>
