@@ -66,7 +66,8 @@ function database_addUser($username, $password) {
             // Insert username and hashed password
             mysqli_query($connection, "INSERT INTO accounts (username, password) VALUES ('{$username}', '{$password}');");
 
-            echo("New account created.");
+        header("Location: login.php");
+        exit();
         }
     }
 
