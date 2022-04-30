@@ -46,4 +46,14 @@
 
         return $status;
     }
+
+
+    function database_close() {
+        // user global connection
+        global $connection;
+
+        if($connection != null) {
+            mysqli_close($connection);
+        }
+    }
 ?>
