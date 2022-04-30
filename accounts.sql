@@ -10,5 +10,5 @@ CREATE TABLE `accounts` (
   PRIMARY KEY(`id`)
 );
 
-INSERT INTO `users` (`id`, `username`, `password`, `fullname`,`phonenumber`) VALUES
+INSERT INTO `accounts` (`id`, `username`, `password`, `fullname`,`phonenumber`) VALUES
 (1, 'sabrina', '$2y$10$jhSIk2N5BnkEEzgEBWQDw.AUQIEcrH8V0AcNLfW2nkjTAH2WgAAlW','Sabrina Garay' '(123) 456-7890');
