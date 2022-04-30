@@ -32,7 +32,7 @@ else {
         <label class="formInfo">Password:</label>
         <input class="formInfo" type="password" placeholder="Password" name="password" id="password"><br>
 
-        <button type="submit" name="submit">Login</button>
+        <button class="formButton" type="submit" name="submit">Login</button>
         </form>
 
     <?php

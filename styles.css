@@ -51,8 +51,20 @@ input {
     border-color: #3f3931; 
     border-radius: 5px;
     border-width: 1px;
+    height: 20px;
 }
 
-button {
-    width: 50px;
+.formButton {
+    height: 30px;
+    width: 100px;
+    color: whitesmoke;
+    background-color: #6d7973;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-style: none;
+}
+
+.formButton:hover {
+    background-color: #E7BAA0;
+    border-width: 3px solid whitesmoke;
 }
