@@ -56,4 +56,18 @@
             mysqli_close($connection);
         }
     }
+
+function database_addUser($username, $password) {
+        // Use the global connection
+        global $connection;
+
+        if($connection != null) {
+            // Overwrite the existing password value as a hash
+            $password = password_hash($password, PASSWORD_DEFAULT);
+            // Insert username and hashed password
+            mysqli_query($connection, "INSERT INTO users (username, password) VALUES ('{$username}', '{$password}');");
+
+            echo("New account created.");
+        }
+    }
 ?>
