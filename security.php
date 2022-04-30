@@ -59,9 +59,9 @@ function secure_logout() {
         setcookie("login", "yes", time() - 10);
     }
 
-function security_addNewUser() {
+function secure_addNewUser() {
         // Validate and sanitize.
-        $result = security_sanitize();
+        $result = secure_sanitize();
         // Open connection.
         database_connect();
 
