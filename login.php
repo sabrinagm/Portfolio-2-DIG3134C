@@ -24,6 +24,7 @@ else {
     <body>
 
         <form action="login.php" method="POST">
+        <p>Please enter your username and password below to login.</p>
 
         <label class="formInfo">Username:</label>
         <input class="formInfo"type="text" placeholder="Username" name="username" id="username"><br>
