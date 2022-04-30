@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+
 <?php
 include("security.php");
 
@@ -38,4 +44,7 @@ else {
     ?>
 
     </body>
+</html>
+
+</body>
 </html>
