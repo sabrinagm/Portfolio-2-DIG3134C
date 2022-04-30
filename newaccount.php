@@ -14,7 +14,7 @@ else {
     </head>
     <body>
         <p>Please enter a username and password below to signup.</p>
-        <form action="newuser.php" method="POST">
+        <form action="newaccount.php" method="POST">
 
         <label>Username:</label>
         <input type="text" placeholder="Username" name="username" id="username">
