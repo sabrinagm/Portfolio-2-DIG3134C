@@ -14,7 +14,7 @@ else {
     </head>
     <body>
         <p>Please enter a username and password below to signup.</p>
-        <form action="signup.php" method="POST">
+        <form action="newuser.php" method="POST">
 
         <label>Username:</label>
         <input type="text" placeholder="Username" name="username" id="username">
@@ -22,13 +22,16 @@ else {
         <label>Password:</label>
         <input type="password" placeholder="Password" name="password" id="password">
 
-        <button type="submit" name="submit">Login</button>
+        <label>Phone Number:</label>
+        <input type="text" placeholder="Phone Number" name="phonenumber" id="phonenumber">
+
+        <button type="submit" name="submit">Create Account</button>
         </form>
 
     <?php
     }
     
-    security_addNewUser();
+    secure_addNewUser();
     ?>
 
     </body>
