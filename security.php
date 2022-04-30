@@ -34,6 +34,9 @@ function secure_login() {
         if($status) {
             // Set a cookie
             setcookie("login", "yes");
+
+        header("Location: todo.php");
+        exit();
         }
     }
 

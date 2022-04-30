@@ -41,7 +41,6 @@ else {
     if (secure_validate()) {
         secure_login();
         echo("<br><a href='logout.php'>Logout</a><br>");
-        echo("<br>Login successful!");
         }
     ?>
 
