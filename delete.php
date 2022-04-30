@@ -26,10 +26,10 @@ if(secure_loggedIn()){
     }
 
     else {
-        echo('<a href="signup.php">Sign Up</a>');
+        echo('<a href="newaccount.php">Sign Up</a>');
     }
 
-    security_deleteUser();
+    secure_deleteUser();
     ?>
 
     </body>
