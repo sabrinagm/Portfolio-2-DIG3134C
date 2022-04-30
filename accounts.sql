@@ -1,7 +1,7 @@
 CREATE DATABASE `accounts`;
 USE `accounts`;
 
-CREATE TABLE `users` (
+CREATE TABLE `accounts` (
   `id` int(11) AUTO_INCREMENT,
   `username` varchar(255),
   `password` varchar(255),
