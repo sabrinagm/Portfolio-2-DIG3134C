@@ -1,3 +1,19 @@
+body {
+    background-color: #E5DACE;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
 .anchor {
-    color: red
+    color: red;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
 }

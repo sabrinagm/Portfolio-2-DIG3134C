@@ -2,7 +2,7 @@
     <head>  
         <link rel="stylesheet" href="styles.css">
     </head>
-
+<body>
 <?php
 include("security.php");
 
@@ -18,5 +18,5 @@ else {
     echo('<a href="login.php" class="anchor">Login</a><br>');    
 }
 ?>
-
+</body>
 </html>
