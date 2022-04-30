@@ -35,3 +35,24 @@ p {
 .anchor:hover {
     color: #E7BAA0;
 }
+
+.formInfo {
+text-align: left;
+color: #3f3931;
+font-size: 16px;
+font-family: 'Source Sans Pro', sans-serif;
+letter-spacing: 1px;
+margin-bottom: 10px;
+margin-top: 10px;
+justify-content: center;
+}
+
+input {
+    border-color: #3f3931; 
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+button {
+    width: 50px;
+}

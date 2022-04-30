@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+    <head>  
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+
 <?php
 //Accepts username and password. If they exist in the database, log in the user.
 include("security.php");
@@ -19,11 +25,11 @@ else {
 
         <form action="login.php" method="POST">
 
-        <label>Username:</label>
-        <input type="text" placeholder="Username" name="username" id="username">
+        <label class="formInfo">Username:</label>
+        <input class="formInfo"type="text" placeholder="Username" name="username" id="username"><br>
 
-        <label>Password:</label>
-        <input type="password" placeholder="Password" name="password" id="password">
+        <label class="formInfo">Password:</label>
+        <input class="formInfo" type="password" placeholder="Password" name="password" id="password"><br>
 
         <button type="submit" name="submit">Login</button>
         </form>
@@ -37,6 +43,9 @@ else {
         echo("<br>Login successful!");
         }
     ?>
+
+    </body>
+</html>
 
     </body>
 </html>
