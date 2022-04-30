@@ -9,10 +9,14 @@ h1 {
     text-align: center;
     color: #6d7973;
     font-size: 40px;
+    font-family: 'Libre Bodoni', serif;
+    margin-bottom: 0;
 }
 
 p {
     text-align: center;
+    color: #3f3931;
+    font-size: 18px;
 }
 
 .anchor {
