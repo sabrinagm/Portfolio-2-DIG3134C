@@ -14,7 +14,7 @@
         //  the password is an empty string.
         $password = "root";
         // Database
-        $database = "lab";
+        $database = "accounts";
 
         if($connection == null) {
             $connection = mysqli_connect($server, $username, $password, $database);
@@ -68,6 +68,22 @@ function database_addUser($username, $password) {
             mysqli_query($connection, "INSERT INTO users (username, password) VALUES ('{$username}', '{$password}');");
 
             echo("New account created.");
+        }
+    }
+
+    //Accepts username and password.
+    //Communicates with database server.
+    //Verifies user exists.
+function database_deleteUser($username, $password) {
+        
+        // Use the global connection
+        global $connection;
+
+        if(database_verifyUser($username, $password)) {
+            $deleteUser = "DELETE FROM users WHERE username = '{$username}'";
+            mysqli_query($connection, $deleteUser);
+
+            echo("Record deleted succesfully.");
         }
     }
 ?>
