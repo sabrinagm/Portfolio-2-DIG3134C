@@ -19,4 +19,39 @@ function secure_validate() {
         return $status;
     }
 
+function secure_login() {
+        // Set a default value
+        $status = false;
+        // Validate and sanitize
+        $result = secure_sanitize();
+        // Open connection
+        database_connect();
+        // Use the connection
+        $status = database_verifyUser($result["username"], $result["password"]);
+        // Close connection
+        database_close();
+        // Check status
+        if($status) {
+            // Set a cookie
+            setcookie("login", "yes");
+        }
+    }
+
+function secure_sanitize() {
+        // Create an array of keys username and password
+        $result = [
+            "username" => null,
+            "password" => null
+        ];
+
+        if(secure_validate()) {
+            // After validation, sanitize text input.
+            $result["username"] = htmlspecialchars($_POST["username"]);
+            $result["password"] = htmlspecialchars($_POST["password"]);
+        }
+
+        // Return array
+        return $result;
+    }
+
 ?>
