@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+    <head></head>
+
 <?php
 include("security.php");
 
@@ -13,3 +16,5 @@ else {
     echo('<a href="login.php">Login</a><br>');    
 }
 ?>
+
+</html>
