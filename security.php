@@ -59,4 +59,24 @@ function secure_logout() {
         setcookie("login", "yes", time() - 10);
     }
 
+function security_addNewUser() {
+        // Validate and sanitize.
+        $result = security_sanitize();
+        // Open connection.
+        database_connect();
+
+        // Use connection.
+        //
+        // We want to make sure we don't add
+        //  duplicate values.
+        if(!database_verifyUser($result["username"], $result["password"])) {
+            // Username does not exist.
+            // Add a new one.
+            database_addUser($result["username"], $result["password"]);
+        }
+        
+        // Close connection.
+        database_close();
+    }
+
 ?>
