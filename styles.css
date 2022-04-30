@@ -68,3 +68,7 @@ input {
     background-color: #E7BAA0;
     border-width: 3px solid whitesmoke;
 }
+
+#createButton {
+ width: 300px;
+}

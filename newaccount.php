@@ -22,19 +22,13 @@ else {
         <p>Please enter a username and password below to signup.</p>
         <form action="newaccount.php" method="POST">
 
-        <label>Username:</label>
-        <input type="text" placeholder="Username" name="username" id="username">
+        <label class="formInfo">Username:</label>
+        <input class="formInfo" type="text" placeholder="Username" name="username" id="username"><br>
 
-        <label>Password:</label>
-        <input type="password" placeholder="Password" name="password" id="password">
+        <label class="formInfo">Password:</label>
+        <input class="formInfo" type="password" placeholder="Password" name="password" id="password"><br>
 
-        <label>Full Name:</label>
-        <input type="text" placeholder="Full Name" name="fullname" id="fullname">
-
-        <label>Phone Number:</label>
-        <input type="text" placeholder="Phone Number" name="phonenumber" id="phonenumber">
-
-        <button type="submit" name="submit">Create Account</button>
+        <button id="createButton" class="formButton" type="submit" name="submit">Create Account</button>
         </form>
 
     <?php
