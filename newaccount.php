@@ -22,12 +22,6 @@ else {
         <label>Password:</label>
         <input type="password" placeholder="Password" name="password" id="password">
 
-        <label>Full Name:</label>
-        <input type="text" placeholder="Full Name" name="fullname" id="fullname">
-
-        <label>Phone Number:</label>
-        <input type="text" placeholder="Phone Number" name="phonenumber" id="phonenumber">
-
         <button type="submit" name="submit">Create Account</button>
         </form>
 
