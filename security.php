@@ -79,9 +79,9 @@ function secure_addNewUser() {
         database_close();
     }
 
-function security_deleteUser() {
+function secure_deleteUser() {
         // Validate and sanitize.
-        $result = security_sanitize();
+        $result = secure_sanitize();
         
         // Open connection.
         database_connect();
