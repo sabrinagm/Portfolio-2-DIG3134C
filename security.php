@@ -79,4 +79,22 @@ function secure_addNewUser() {
         database_close();
     }
 
+function security_deleteUser() {
+        // Validate and sanitize.
+        $result = security_sanitize();
+        
+        // Open connection.
+        database_connect();
+    
+        // Use connection.
+        if(database_verifyUser($result["username"], $result["password"])) {
+                
+        // User exists. Delete info.
+        database_deleteUser($result["username"], $result["password"]);
+            }
+            
+        // Close connection.
+        database_close();
+    }
+
 ?>
