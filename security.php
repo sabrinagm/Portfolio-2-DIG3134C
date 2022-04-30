@@ -7,4 +7,16 @@ function secure_loggedIn() {
         return isset($_COOKIE["login"]);
     }
 
+function secure_validate() {
+        // Set a default value
+        $status = false;
+        
+        // Validate
+        if(isset($_POST["username"]) and isset($_POST["password"])) {
+            $status = true;
+        }
+
+        return $status;
+    }
+
 ?>
