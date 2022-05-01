@@ -24,3 +24,4 @@ secure_logout();
 else {
     echo('<a href="index.php">Return to Main</a><br>');
 }
+?>
