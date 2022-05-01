@@ -1,17 +1,21 @@
-<?php
-//Connecting to database.
-$connecting = mysqli_connect("localhost", "root", "todolist");
+<?php 
+    // initialize errors variable
+	$errors = "";
 
-if(isset($_POST['submit'])) {
-    $todoitem = $_POST['task'];
-    $data = "INSERT INTO `todolist` (`task`) VALUES ('$todoitem')";
-    mysqli_query($connecting, $data);
-    header("Location: todo.php");
-    exit();
-}
-else {
-    echo("Enter task.");
-}
+	// connect to database
+	$db = mysqli_connect("localhost", "root", "", "todo");
+
+	// insert a quote if submit button is clicked
+	if (isset($_POST['submit'])) {
+		if (empty($_POST['task'])) {
+			$errors = "You must fill in the task";
+		}else{
+			$task = $_POST['task'];
+			$sql = "INSERT INTO tasks (task) VALUES ('$task')";
+			mysqli_query($db, $sql);
+			header('location: index.php');
+		}
+	}	
 
 ?>
 
