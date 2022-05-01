@@ -23,6 +23,8 @@ if(secure_loggedIn()){
         <button class="formButton" type="submit" name="submit">Delete Account</button>
         </form>
 
+        <a class="anchor" href="index.php">Return to Main</a>
+
     <?php
     }
 
