@@ -41,7 +41,6 @@ else {
 
     if (secure_validate()) {
         secure_login();
-        header("Location:todo.php");
         }
     ?>
 
