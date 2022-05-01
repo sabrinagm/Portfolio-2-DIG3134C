@@ -100,4 +100,17 @@ function secure_deleteUser() {
         database_close();
     }
 
+function secure_addNewTask() {
+        // Validate and sanitize.
+        $result = secure_sanitize();
+        // Open connection.
+        databaseTask_connect();
+
+        //Add task.
+        database_addTask($result["task"]);
+        
+        // Close connection.
+        database_close();
+    }
+
 ?>

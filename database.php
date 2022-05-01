@@ -110,10 +110,8 @@ function database_addTask($task) {
         global $connection;
 
         if($connection != null) {
-            // Overwrite the existing password value as a hash
-            $password = password_hash($password, PASSWORD_DEFAULT);
             // Insert username and hashed password
-            mysqli_query($connection, "INSERT INTO accounts (username, password) VALUES ('{$username}', '{$password}');");
+            mysqli_query($connection, "INSERT INTO todo (task) VALUES ($task);");
 
         header("Location: todo.php");
         exit();
