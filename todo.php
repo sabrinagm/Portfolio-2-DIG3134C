@@ -4,7 +4,7 @@ $database = mysqli_connect('localhost', 'root', 'root', 'todo');
 
 if (isset($_POST['submit'])) {
     $task = $_POST['todotask'];
-    mysqli_query($database, "INSERT INTO `todo` (`task`) VALUES ($task);");
+    mysqli_query($database, "INSERT INTO `todo` (`task`) VALUES ('{$task}');");
 
 mysqli_close($database);
 }
