@@ -5,7 +5,6 @@
 <body>
 
 <?php
-//Accepts username and password. If they exist in the database, log in the user.
 include("security.php");
 
 if (secure_loggedIn()){
@@ -40,7 +39,6 @@ else {
 
     if (secure_validate()) {
         secure_login();
-        header("Location: todo.php");
         }
     ?>
 
