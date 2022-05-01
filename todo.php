@@ -8,6 +8,9 @@ if (isset($_POST['submit'])) {
     $task = $_POST['todotask'];
     mysqli_query($databaseconnect, "INSERT INTO `todo` (`task`) VALUES ('{$task}');");
 
+    $return = mysqli_query($databaseconnect, "SELECT task FROM tasks");
+    $row = mysqli_fetch_assoc($return);
+
 //Closes connection.
 mysqli_close($databaseconnect);
 }
@@ -28,14 +31,6 @@ mysqli_close($databaseconnect);
     <button class="formButton" type="submit" name="submit">Add</button>
 
 </form>
-
-<?php
-
-$return = mysqli_query($databaseconnect, "SELECT task FROM tasks");
-$row = mysqli_fetch_assoc($return);
-mysqli_close($databaseconnect);
-
-?>
 
 <table>
     <tr>
