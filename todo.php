@@ -12,6 +12,8 @@ if (isset($_POST['submit'])) {
 mysqli_close($databaseconnect);
 }
 
+$results = mysqli_query($databaseconnect, "SELECT * FROM tasks")
+
 ?>
 
 <!DOCTYPE html>
@@ -32,6 +34,10 @@ mysqli_close($databaseconnect);
     <tr>
         <th>Task</th>
         <th>Complete</th>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
     </tr>
 <table>
 </body>
