@@ -1,4 +1,7 @@
 <?php
+//Connecting to database.
+$connecting = mysqli_connect("localhost", "root", "todolist")
+
 ?>
 
 <!DOCTYPE html>
