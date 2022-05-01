@@ -19,7 +19,7 @@ mysqli_close($databaseconnect);
         <link rel="stylesheet" href="styles.css">
     </head>
 <body>
-<h1 class="todoheader" >Today's a great day to check some things off your list!</h1>
+<h1 class="todoheader" >Today's a great day to add some things to your to-do list!</h1>
 
 <form action="todo.php" method="POST">
 
@@ -29,16 +29,15 @@ mysqli_close($databaseconnect);
 
 </form>
 
-<table>
+<!-- <table>
     <tr>
         <th>Task</th>
         <th>Complete</th>
         <tr>
-            <td><?php echo($row['task']);?></td>
             <td></td>
         </tr>
     </tr>
-<table>
+<table> -->
 </body>
 </html>
 
