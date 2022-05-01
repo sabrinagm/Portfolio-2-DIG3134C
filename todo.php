@@ -22,10 +22,17 @@ mysqli_close($databaseconnect);
 <h1 class="todoheader" >Today's a great day to check some things off your list!</h1>
 
 <form action="todo.php" method="POST">
+
     <p>To-Do List</p>
     <input class=formInfo type="text" name="todotask">
     <button class="formButton" type="submit" name="submit">Add</button>
 
 </form>
+<table>
+    <tr>
+        <th>Task</th>
+        <th>Complete</th>
+    </tr>
+<table>
 </body>
 </html>
