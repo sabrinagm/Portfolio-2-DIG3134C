@@ -25,7 +25,7 @@ mysqli_close($databaseconnect);
 <form action="todo.php" method="POST">
 
     <input class=formInfo type="text" name="todotask">
-    <button class="formButton" type="submit" name="submit">Add</button>
+    <button class="formButton" type="submit" name="submit" placeholder="Enter a task.">Add</button>
 
 </form>
 
