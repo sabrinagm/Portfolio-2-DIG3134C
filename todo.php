@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
 mysqli_close($databaseconnect);
 }
 
-$return = mysqli_query($databaseconnect, "SELECT * FROM tasks");
+$return = mysqli_query($databaseconnect, 'SELECT * FROM tasks');
 $row = mysqli_fetch_assoc($return);
 
 ?>
