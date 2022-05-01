@@ -1,19 +1,6 @@
 <?php 
 include("database.php");
 
-    // initialize errors variable
-	$errors = "";
-
-	// connect to database
-	$db = databaseTask_connect();
-
-	// insert a quote if submit button is clicked
-	if (isset($_POST['submit'])) {
-			$task = $_POST['task'];
-			$sql = "INSERT INTO tasks (task) VALUES ('$task')";
-			mysqli_query($db, $sql);
-			header('location: index.php');
-		}
 ?>
 
 <!DOCTYPE html>
