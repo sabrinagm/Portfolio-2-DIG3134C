@@ -7,6 +7,7 @@ $databaseconnect = mysqli_connect('localhost', 'root', 'root', 'todo');
 if (isset($_POST['submit'])) {
     $task = $_POST['todotask'];
     mysqli_query($databaseconnect, "INSERT INTO `todo` (`task`) VALUES ('{$task}');");
+    echo("Task has been added to database!");
 
 //Closes connection.
 mysqli_close($databaseconnect);
