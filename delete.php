@@ -31,8 +31,8 @@ if(secure_loggedIn()){
     }
 
     secure_deleteUser();
-    echo("Account has been deleted.")
-    header("Location: login.php");
+    echo("Account has been deleted.");
+    echo("<br><a class='anchor' href='index.php'>Return to Main</a><br>");
     ?>
 
     </body>
