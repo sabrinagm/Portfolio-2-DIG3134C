@@ -1,9 +1,11 @@
 <?php 
+include("database.php");
+
     // initialize errors variable
 	$errors = "";
 
 	// connect to database
-	$db = mysqli_connect("localhost", "root", "", "todo");
+	$db = databaseTask_connect();
 
 	// insert a quote if submit button is clicked
 	if (isset($_POST['submit'])) {
@@ -17,7 +19,7 @@
 		}
 	}
 ?>
-	
+
 <!DOCTYPE html>
     <head>  
         <link rel="stylesheet" href="styles.css">
