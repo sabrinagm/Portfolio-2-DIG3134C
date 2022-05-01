@@ -86,4 +86,22 @@ function database_deleteUser($username, $password) {
             echo("Record deleted succesfully.");
         }
     }
+
+function databaseTask_connect() {
+        // Use the global connection
+        global $connection;
+
+        // Server
+        $serverTask = "localhost";
+        // Username
+        $usernameTask = "root";
+
+        $passwordTask = "root";
+        // Database
+        $databaseTask = "todo";
+
+        if($connection == null) {
+            $connection = mysqli_connect($serverTask, $usernameTask, $passwordTask, $databaseTask);
+        }
+    }
 ?>
