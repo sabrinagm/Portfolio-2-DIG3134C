@@ -27,7 +27,7 @@ if(secure_loggedIn()){
     }
 
     else {
-        echo('<a href="newaccount.php">Sign Up</a>');
+        echo('<a class="anchor" href="newaccount.php">Sign Up</a>');
     }
 
     secure_deleteUser();
