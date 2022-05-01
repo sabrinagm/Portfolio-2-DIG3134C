@@ -42,6 +42,10 @@ else {
         secure_login();
         echo("<br><a href='logout.php'>Logout</a><br>");
         }
+
+    else {
+        echo("Invalid information, try again!");
+    }
     ?>
 
     </body>
