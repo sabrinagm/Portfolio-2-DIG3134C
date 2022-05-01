@@ -9,10 +9,11 @@ if (isset($_POST['submit'])) {
     mysqli_query($databaseconnect, "INSERT INTO `todo` (`task`) VALUES ('{$task}');");
 
 //Closes connection.
+mysqli_close($databaseconnect);
 }
 
-$return = mysqli_query($databaseconnect, "SELECT task FROM tasks");
-$row = mysqli_fetch_array($return);
+$return = mysqli_query($databaseconnect, "SELECT * FROM tasks");
+$row = mysqli_fetch_assoc($return);
 
 ?>
 
