@@ -21,5 +21,6 @@ secure_logout();
 }
 
 else {
-    echo('<a href="index.php">Index</a><br>');
+    header("Location: index.php");
+    exit();
 }
