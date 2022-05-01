@@ -1,13 +1,16 @@
 <?php
 //Connecting to database.
-$connecting = mysqli_connect("localhost", "root", "todolist")
+$connecting = mysqli_connect("localhost", "root", "todolist");
 
 if(isset($_POST['submit'])) {
-    $todoitem = $_POST['task']
+    $todoitem = $_POST['task'];
     $data = "INSERT INTO `todolist` (`task`) VALUES ('$todoitem')";
     mysqli_query($connecting, $data);
     header("Location: todo.php");
     exit();
+}
+else {
+    echo("Enter task.");
 }
 
 ?>
