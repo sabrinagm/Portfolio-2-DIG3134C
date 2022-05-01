@@ -8,9 +8,6 @@ if (isset($_POST['submit'])) {
     $task = $_POST['todotask'];
     mysqli_query($databaseconnect, "INSERT INTO `todo` (`task`) VALUES ('{$task}');");
 
-    $return = mysqli_query($databaseconnect, "SELECT task FROM tasks");
-    $row = mysqli_fetch_assoc($return);
-
 //Closes connection.
 mysqli_close($databaseconnect);
 }
@@ -47,4 +44,5 @@ mysqli_close($databaseconnect);
 
 <?php
         echo("<br><a class='anchor' href='logout.php'>Logout</a><br>");
+        echo('<a class="anchor" href="delete.php">Delete Account</a>');
 ?>
