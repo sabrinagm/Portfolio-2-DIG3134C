@@ -12,8 +12,8 @@ if (isset($_POST['submit'])) {
 mysqli_close($databaseconnect);
 }
 
-$return = mysqli_query($databaseconnect, "SELECT * FROM tasks");
-$row = mysqli_fetch_assoc($return);
+// $return = mysqli_query($databaseconnect, "SELECT * FROM tasks");
+// $row = mysqli_fetch_assoc($return);
 
 ?>
 
@@ -45,5 +45,5 @@ $row = mysqli_fetch_assoc($return);
 </html>
 
 <?php
-        echo("<br><a href='logout.php'>Logout</a><br>");
+        echo("<br><a class='anchor' href='logout.php'>Logout</a><br>");
 ?>
