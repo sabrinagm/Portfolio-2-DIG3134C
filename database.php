@@ -87,36 +87,4 @@ function database_deleteUser($username, $password) {
         }
     }
 
-function databaseTask_connect() {
-        // Use the global connection
-        global $connection;
-
-        // Server
-        $serverTask = "localhost";
-        // Username
-        $usernameTask = "root";
-
-        $passwordTask = "root";
-        // Database
-        $databaseTask = "todo";
-
-        if($connection == null) {
-            $connection = mysqli_connect($serverTask, $usernameTask, $passwordTask, $databaseTask);
-        }
-    }
-
-function database_addTask($task) {
-        // Use the global connection
-        global $connection;
-
-        if($connection != null) {
-            // Insert task
-            mysqli_query($connection, "INSERT INTO `todo` (`task`) VALUES ($task);");
-
-        header("Location: todo.php");
-        exit();
-        }
-    }
-
-
 ?>
