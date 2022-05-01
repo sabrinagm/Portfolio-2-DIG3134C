@@ -28,7 +28,9 @@ else {
         <label class="formInfo">Password:</label>
         <input class="formInfo" type="password" placeholder="Password" name="password" id="password"><br>
 
-        <button id="createButton" class="formButton" type="submit" name="submit">Create Account</button>
+        <button id="createButton" class="formButton" type="submit" name="submit">Create Account</button><br>
+
+        <a class="anchor" href="index.php">Return to Main</a>
         </form>
 
     <?php
