@@ -1,5 +1,11 @@
 <?php 
-include("database.php");
+$database = mysqli_connect('localhost', 'root', '', 'todo');
+
+if (isset($_POST['submit'])) {
+    $task = $_POST['todotask'];
+
+    mysqli_query($database, "INSERT INTO tasks (task) VALUES ('$task')");
+}
 
 ?>
 
