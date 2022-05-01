@@ -1,7 +1,7 @@
 CREATE DATABASE `todo`;
 USE `todo`;
 
-CREATE TABLE `todo` (
+CREATE TABLE `tasks` (
   `id` int(11) AUTO_INCREMENT,
   `task` varchar(255),
   PRIMARY KEY(`id`)
