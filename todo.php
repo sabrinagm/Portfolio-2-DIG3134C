@@ -12,9 +12,6 @@ if (isset($_POST['submit'])) {
 mysqli_close($databaseconnect);
 }
 
-// $return = mysqli_query($databaseconnect, "SELECT * FROM tasks");
-// $row = mysqli_fetch_assoc($return);
-
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +28,14 @@ mysqli_close($databaseconnect);
     <button class="formButton" type="submit" name="submit">Add</button>
 
 </form>
+
+<?php
+
+$return = mysqli_query($databaseconnect, "SELECT * FROM tasks");
+$row = mysqli_fetch_assoc($return);
+
+?>
+
 <table>
     <tr>
         <th>Task</th>
