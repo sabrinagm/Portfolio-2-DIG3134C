@@ -6,7 +6,8 @@ if(secure_loggedIn()){
 
 <html>
     <head>
-        <title>Remove</title>
+        <title>Delete Account</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
@@ -30,6 +31,7 @@ if(secure_loggedIn()){
     }
 
     secure_deleteUser();
+    header("Location: login.php");
     ?>
 
     </body>
