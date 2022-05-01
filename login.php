@@ -10,7 +10,7 @@ include("security.php");
 
 if (secure_loggedIn()){
     echo("<p>Already logged in. Click below to proceed.</p><br>");
-    echo('<a class="anchor" href="index.php">Index</a>');
+    echo('<a class="anchor" href="todo.php">To-Do</a>');
 }
 
 else {

@@ -8,6 +8,7 @@ secure_logout();
 
 <html>
 <head>
+    <link rel="stylesheet" href="styles.css">
     <title>Log Out</title>
 <head>
     <body>
@@ -15,7 +16,7 @@ secure_logout();
     </body>
 </html>
 
-<a href="login.php">Return to Login</a>
+<a href="login.php" class="anchor">Return to Login</a>
 
 <?php 
 }
