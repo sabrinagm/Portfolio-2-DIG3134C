@@ -7,8 +7,8 @@
 
 <form action="todo.php" method="POST">
 
-    <input>
-    
+    <input type="text" name="todotask">
+
 </form>
 </body>
 </html>
