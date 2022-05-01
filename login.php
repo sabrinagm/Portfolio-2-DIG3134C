@@ -40,7 +40,7 @@ else {
 
     if (secure_validate()) {
         secure_login();
-        echo("<br><a href='logout.php'>Logout</a><br>");
+        header("Location: todo.php");
         }
     ?>
 
