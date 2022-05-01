@@ -33,6 +33,7 @@ mysqli_close($databaseconnect);
 
 $return = mysqli_query($databaseconnect, "SELECT task FROM tasks");
 $row = mysqli_fetch_assoc($return);
+mysqli_close($databaseconnect);
 
 ?>
 
