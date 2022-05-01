@@ -41,6 +41,7 @@ else {
 
     if (secure_validate()) {
         secure_login();
+        echo('<a class="anchor" href="todo.php">Proceed to To-Do</a>');
         }
     ?>
 
