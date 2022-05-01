@@ -8,4 +8,4 @@ CREATE TABLE `tasks` (
 );
 
 INSERT INTO `todo` (`id`, `task`) VALUES
-(1, 'Walk dog');
+(1, 'Walk dog')

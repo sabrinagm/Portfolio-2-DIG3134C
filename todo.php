@@ -43,3 +43,7 @@ $row = mysqli_fetch_array($results);
 <table>
 </body>
 </html>
+
+<?php
+        echo("<br><a href='logout.php'>Logout</a><br>");
+?>
