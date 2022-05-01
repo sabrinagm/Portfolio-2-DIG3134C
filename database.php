@@ -110,8 +110,8 @@ function database_addTask($task) {
         global $connection;
 
         if($connection != null) {
-            // Insert username and hashed password
-            mysqli_query($connection, "INSERT INTO todo (task) VALUES ($task);");
+            // Insert task
+            mysqli_query($connection, "INSERT INTO `todo` (`task`) VALUES ($task);");
 
         header("Location: todo.php");
         exit();
