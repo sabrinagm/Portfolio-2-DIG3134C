@@ -104,4 +104,21 @@ function databaseTask_connect() {
             $connection = mysqli_connect($serverTask, $usernameTask, $passwordTask, $databaseTask);
         }
     }
+
+function database_addTask($task) {
+        // Use the global connection
+        global $connection;
+
+        if($connection != null) {
+            // Overwrite the existing password value as a hash
+            $password = password_hash($password, PASSWORD_DEFAULT);
+            // Insert username and hashed password
+            mysqli_query($connection, "INSERT INTO accounts (username, password) VALUES ('{$username}', '{$password}');");
+
+        header("Location: todo.php");
+        exit();
+        }
+    }
+
+
 ?>
