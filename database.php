@@ -82,8 +82,6 @@ function database_deleteUser($username, $password) {
         if(database_verifyUser($username, $password)) {
             $deleteUser = "DELETE FROM accounts WHERE username = '{$username}'";
             mysqli_query($connection, $deleteUser);
-
-            echo("Record deleted succesfully.");
         }
     }
 
