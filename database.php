@@ -65,9 +65,6 @@ function database_addUser($username, $password) {
             $password = password_hash($password, PASSWORD_DEFAULT);
             // Insert username and hashed password
             mysqli_query($connection, "INSERT INTO accounts (username, password) VALUES ('{$username}', '{$password}');");
-
-        header("Location: todo.php");
-        exit();
         }
     }
 

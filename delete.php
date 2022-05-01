@@ -29,6 +29,7 @@ if(secure_loggedIn()){
     }
 
     else {
+        echo("Account deleted!<br>");
         echo('<a class="anchor" href="newaccount.php">Sign Up</a>');
     }
 
