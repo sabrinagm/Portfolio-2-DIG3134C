@@ -29,15 +29,6 @@ mysqli_close($databaseconnect);
 
 </form>
 
-<!-- <table>
-    <tr>
-        <th>Task</th>
-        <th>Complete</th>
-        <tr>
-            <td></td>
-        </tr>
-    </tr>
-<table> -->
 </body>
 </html>
 
