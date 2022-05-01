@@ -1,11 +1,14 @@
 <?php 
 
+//Connects to database.
 $database = mysqli_connect('localhost', 'root', 'root', 'todo');
 
+//When user clciks submit button, inserts task into database.
 if (isset($_POST['submit'])) {
     $task = $_POST['todotask'];
     mysqli_query($database, "INSERT INTO `todo` (`task`) VALUES ('{$task}');");
 
+//Closes connection.
 mysqli_close($database);
 }
 
